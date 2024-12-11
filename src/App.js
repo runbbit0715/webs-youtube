@@ -13,10 +13,15 @@ import Channer from './pages/Channer'
 import Video from './pages/Video'
 import Serch from './pages/Serch'
 import Not from './pages/Not'
+import Header from './components/section/Header'
+import Main from './components/section/Main'
+import Footer from './components/section/Footer'
 
 const App = () => {
     return (
         <BrowserRouter>
+        <Header />
+        <Main>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/today' element={<Today/>}/>
@@ -27,10 +32,13 @@ const App = () => {
                 <Route path='/port' element={<Port/>}/>
                 <Route path='/youtube' element={<Youtube/>}/>
                 <Route path='/channer/:channelID' element={<Channer/>}/>
+                
                 <Route path='/video/:videoID' element={<Video/>}/>
                 <Route path='/serch/:serchID' element={<Serch/>}/>
                 <Route path='/*' element={<Not/>}/>
             </Routes>
+        </Main>
+        <Footer />
         </BrowserRouter>
     )
 }
