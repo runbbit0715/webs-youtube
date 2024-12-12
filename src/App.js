@@ -3,16 +3,18 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Today from './pages/Today'
-import Developer from './pages/Developer'
-import Webd from './pages/Webd'
-import Website from './pages/Website'
-import Gsap from './pages/Gsap'
-import Port from './pages/Port'
-import Youtube from './pages/Youtube'
+import Recommed from './pages/Recommed'
+import Song from './pages/Song'
+import Live from './pages/Live'
+import Radio from './pages/Radio'
+import Lassgo from './pages/Lassgo'
+import Stage from './pages/Stage'
+import Outside from './pages/Outside'
 import Channer from './pages/Channer'
 import Video from './pages/Video'
 import Serch from './pages/Serch'
 import Not from './pages/Not'
+
 import Header from './components/section/Header'
 import Main from './components/section/Main'
 import Footer from './components/section/Footer'
@@ -25,12 +27,13 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/today' element={<Today/>}/>
-                <Route path='/developer' element={<Developer/>}/>
-                <Route path='/webd' element={<Webd/>}/>
-                <Route path='/website' element={<Website/>}/>
-                <Route path='/gsap' element={<Gsap/>}/>
-                <Route path='/port' element={<Port/>}/>
-                <Route path='/youtube' element={<Youtube/>}/>
+                <Route path='/recommed' element={<Recommed/>}/>
+                <Route path='/song' element={<Song/>}/>
+                <Route path='/live' element={<Live/>}/>
+                <Route path='/radio' element={<Radio/>}/>
+                <Route path='/lassgo' element={<Lassgo/>}/>
+                <Route path='/stage' element={<Stage/>}/>
+                <Route path='/outside' element={<Outside/>}/>
                 <Route path='/channer/:channelID' element={<Channer/>}/>
                 
                 <Route path='/video/:videoID' element={<Video/>}/>
