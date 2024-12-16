@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Today from './pages/Today'
-import Recommed from './pages/Recommed'
+import Recommend from './pages/Recommend'
 import Song from './pages/Song'
 import Live from './pages/Live'
 import Radio from './pages/Radio'
@@ -27,7 +27,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/today' element={<Today/>}/>
-                <Route path='/recommed' element={<Recommed/>}/>
+                <Route path='/recommend' element={<Recommend/>}/>
                 <Route path='/song' element={<Song/>}/>
                 <Route path='/live' element={<Live/>}/>
                 <Route path='/radio' element={<Radio/>}/>
