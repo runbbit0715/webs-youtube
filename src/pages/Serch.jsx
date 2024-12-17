@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Serch = () => {
   return (
-    <div>Serch</div>
+    <Main>
+      Serch
+    </Main>
   )
 }
 

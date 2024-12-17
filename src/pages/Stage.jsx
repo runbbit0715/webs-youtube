@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Stage = () => {
   return (
-    <div>Stage</div>
+    <Main>
+      Stage
+    </Main>
   )
 }
 

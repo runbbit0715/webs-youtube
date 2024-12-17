@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Lassgo = () => {
   return (
-    <div>Lassgo</div>
+    <Main>
+      Lassgo
+    </Main>
   )
 }
 

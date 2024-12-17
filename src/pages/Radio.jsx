@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Radio = () => {
   return (
-    <div>Radio</div>
+    <Main>
+      Radio
+    </Main>
   )
 }
 

@@ -1,29 +1,27 @@
-import React from 'react'
+import React, {Suspense, lazy} from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import Home from './pages/Home'
-import Today from './pages/Today'
-import Recommend from './pages/Recommend'
-import Song from './pages/Song'
-import Live from './pages/Live'
-import Radio from './pages/Radio'
-import Lassgo from './pages/Lassgo'
-import Stage from './pages/Stage'
-import Outside from './pages/Outside'
-import Channer from './pages/Channer'
-import Video from './pages/Video'
-import Serch from './pages/Serch'
-import Not from './pages/Not'
-
-import Header from './components/section/Header'
 import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+
+const Home = lazy(() => import('./pages/Home'));
+const Today = lazy(() => import('./pages/Today'));
+const Recommend = lazy(() => import('./pages/Recommend'));
+const Song = lazy(() => import('./pages/Song'));
+const Live = lazy(() => import('./pages/Live'));
+const Radio = lazy(() => import('./pages/Radio')); 
+const Lassgo = lazy(() => import('./pages/Lassgo'));
+const Stage = lazy(() => import('./pages/Stage'));
+const Outside = lazy(() => import('./pages/Outside'));
+const Channer = lazy(() => import('./pages/Channer'));
+const Video = lazy(() => import('./pages/Video'));
+const Serch = lazy(() => import('./pages/Serch'));
+const Not = lazy(() => import('./pages/Not'));
+
+
 
 const App = () => {
     return (
         <BrowserRouter>
-        <Header />
-        <Main>
+        <Suspense fallback={<Main />}>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/today' element={<Today/>}/>
@@ -40,8 +38,7 @@ const App = () => {
                 <Route path='/serch/:serchID' element={<Serch/>}/>
                 <Route path='/*' element={<Not/>}/>
             </Routes>
-        </Main>
-        <Footer />
+        </Suspense>
         </BrowserRouter>
     )
 }

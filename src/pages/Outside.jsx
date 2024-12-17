@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Outside = () => {
   return (
-    <div>Outside</div>
+    <Main>
+      Outside
+    </Main>
   )
 }
 
