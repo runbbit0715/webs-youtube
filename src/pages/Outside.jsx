@@ -3,7 +3,7 @@ import Main from '../components/section/Main'
 
 const Outside = () => {
   return (
-    <Main>
+    <Main title="플레이브 외부 영상" description="플레이브 외부 영상 페이지">
       Outside
     </Main>
   )
